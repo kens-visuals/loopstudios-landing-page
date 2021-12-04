@@ -1,19 +1,39 @@
 @use '../abstracts/index.scss' as *;
 
-.attribution {
-  font-size: 1rem;
-  text-align: center;
-  margin-block: 1rem;
+.loopstudios {
+  &__footer {
+    font-size: 1rem;
+    text-align: center;
+    margin-block: 1rem;
 
-  &__link:link,
-  &__link:visited {
-    text-transform: uppercase;
-    // color: ;
-    transition: all 0.3s;
+    &-link:link,
+    &-link:visited {
+      text-transform: uppercase;
+      // color: ;
+      transition: all 0.3s;
+    }
+
+    &-link:hover,
+    &-link:active {
+      // color: ;
+    }
   }
 
-  &__link:hover,
-  &__link:active {
-    // color: ;
+  &__copyrights {
+  }
+
+  &__creater {
+  }
+
+  &__list-icon {
+  }
+
+  &__item-icon {
+  }
+
+  &__link-icon {
+  }
+
+  &__icon {
   }
 }
