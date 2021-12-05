@@ -1,6 +1,20 @@
 @use '../abstracts/index.scss' as *;
 
 .loopstudios__btn {
-  &-hamburger {
+  width: 16rem;
+  background: unset;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: $font-secondary;
+  border: 0.1rem solid $color-primary--dark;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem;
+  justify-self: center;
+
+  &--hamburger {
+    all: unset;
+    border: 0;
   }
 }

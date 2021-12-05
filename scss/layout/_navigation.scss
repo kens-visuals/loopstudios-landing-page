@@ -3,6 +3,7 @@
 .loopstudios {
   &__nav {
     &--primary {
+      display: none;
     }
 
     &--secondary {
@@ -10,10 +11,13 @@
   }
 
   &__list {
+    list-style: none;
+
     &--primary {
     }
 
     &--secondary {
+      margin: 4rem 0;
     }
   }
 
@@ -22,6 +26,9 @@
     }
 
     &--secondary {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
     }
   }
 
@@ -30,6 +37,14 @@
     }
 
     &--secondary {
+      &:link,
+      &:visited {
+        color: $color-primary;
+        font-size: 1.4rem;
+        font-family: $font-secondary;
+        font-weight: 300;
+        text-decoration: none;
+      }
     }
   }
 }

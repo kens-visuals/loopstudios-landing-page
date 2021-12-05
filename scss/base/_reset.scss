@@ -43,6 +43,8 @@ html {
 
 body {
   min-height: 100vh;
+  color: $color-primary;
+  font-family: $font-primary;
   font-size: 1.6rem;
   text-rendering: optimizeSpeed;
 }

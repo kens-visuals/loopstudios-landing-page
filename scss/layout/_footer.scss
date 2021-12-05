@@ -1,37 +1,55 @@
 @use '../abstracts/index.scss' as *;
+@use '../components/index.scss' as *;
 
 .loopstudios {
   &__footer {
-    font-size: 1rem;
+    background-color: $color-primary--dark;
     text-align: center;
-    margin-block: 1rem;
+    padding: 5rem 2.5rem;
+    margin-top: 10rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    & > :not(:nth-child(3)) {
+      margin: 0;
+    }
+  }
+
+  &__copyrights {
+    color: $color-secondary--dark;
+  }
+
+  &__creater {
+    color: $color-secondary--dark;
+    font-size: 1rem;
 
     &-link:link,
     &-link:visited {
       text-transform: uppercase;
-      // color: ;
+      color: $color-secondary;
       transition: all 0.3s;
     }
 
     &-link:hover,
     &-link:active {
-      // color: ;
+      color: $color-primary;
     }
   }
 
-  &__copyrights {
+  &__list--icon {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
   }
 
-  &__creater {
+  &__item--icon {
   }
 
-  &__list-icon {
-  }
-
-  &__item-icon {
-  }
-
-  &__link-icon {
+  &__link--icon {
   }
 
   &__icon {

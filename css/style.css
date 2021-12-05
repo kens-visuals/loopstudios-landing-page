@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  text-rendering: optimizeSpeed;
+}
+
+.loopstudios__heading {
+  text-transform: uppercase;
+}
+.loopstudios__heading--primary {
+  font-size: 3.9rem;
+  font-weight: lighter;
+  line-height: 1;
+  border: 0.2rem solid white;
+  margin-top: 16rem;
+  padding: 2.2rem 2.5rem 1.5rem 2.5rem;
+}
+.loopstudios__heading--secondary {
+  color: black;
+  font-size: 3.2rem;
+  line-height: 3rem;
+  font-weight: lighter;
+}
+.loopstudios__heading--tertiary {
+  width: 40%;
+  font-size: 2.3rem;
+  text-align: left;
+  margin: 0 0 2rem 2rem;
+}
+.loopstudios__desc {
+  color: black;
+  padding: 4rem 0;
+}
+.loopstudios__text {
+  max-width: 50rem;
+  color: #8c8c8c;
+  font-size: 1.5rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin: 1.5rem auto;
+}
+
+.loopstudios__nav--primary {
+  display: none;
+}
+.loopstudios__list {
+  list-style: none;
+}
+.loopstudios__list--secondary {
+  margin: 4rem 0;
+}
+.loopstudios__item--secondary:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.loopstudios__link--secondary:link, .loopstudios__link--secondary:visited {
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.loopstudios__header {
+  padding-top: 4rem;
+}
+.loopstudios__logo {
+  width: 14rem;
+}
+.loopstudios__btn {
+  width: 16rem;
+  background: unset;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: "Alata", sans-serif;
+  border: 0.1rem solid black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem;
+  justify-self: center;
+}
+.loopstudios__btn--hamburger {
+  all: unset;
+  border: 0;
+}
+
+.loopstudios__container, .loopstudios__creations {
+  padding: 0 2.5rem;
+}
+.loopstudios__wrapper-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loopstudios__hero {
+  min-height: 65.5rem;
+  background-image: url("../../images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.loopstudios__intro {
+  padding: 9rem 0 3rem 0;
+  text-align: center;
+}
+.loopstudios__intro-img {
+  min-height: 22.8rem;
+  background-image: url("../../images/mobile/image-interactive.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+.loopstudios__creations {
+  text-align: center;
+}
+.loopstudios__creation {
+  min-height: 12rem;
+  background-repeat: no-repeat;
+  background-size: 60%, cover;
+  background-position: left, center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: end;
+}
+.loopstudios__creation--earth {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("../../images/mobile/image-deep-earth.jpg");
+}
+.loopstudios__creation--arcade {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("../../images/mobile/image-night-arcade.jpg");
+}
+.loopstudios__creation--soccer {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("../../images/mobile/image-soccer-team.jpg");
+}
+.loopstudios__creation--gird {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("../../images/mobile/image-grid.jpg");
+}
+.loopstudios__creation--above {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("../../images/mobile/image-from-above.jpg");
+}
+.loopstudios__creation--pocket {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("../../images/mobile/image-pocket-borealis.jpg");
+}
+.loopstudios__creation--curiosity {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("../../images/mobile/image-curiosity.jpg");
+}
+.loopstudios__creation--fisheye {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("../../images/mobile/image-fisheye.jpg");
+}
+
+.loopstudios__creations {
+  display: grid;
+  grid-template-rows: 7.3rem repeat(8, 1fr) 5rem;
+  align-items: center;
+  gap: 2.2rem;
+}
+.loopstudios__footer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.loopstudios__footer {
+  background-color: black;
+  text-align: center;
+  padding: 5rem 2.5rem;
+  margin-top: 10rem;
+}
+.loopstudios__footer > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.loopstudios__footer > :not(:nth-child(3)) {
+  margin: 0;
+}
+.loopstudios__copyrights {
+  color: dimgray;
+}
+.loopstudios__creater {
+  color: dimgray;
+  font-size: 1rem;
+}
+.loopstudios__creater-link:link, .loopstudios__creater-link:visited {
+  text-transform: uppercase;
+  color: #8c8c8c;
+  transition: all 0.3s;
+}
+.loopstudios__creater-link:hover, .loopstudios__creater-link:active {
+  color: white;
+}
+.loopstudios__list--icon {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

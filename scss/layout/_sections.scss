@@ -1,13 +1,119 @@
 @use '../abstracts/index.scss' as *;
+@use '../components/index.scss' as *;
 
 .loopstudios {
+  &__hero {
+    min-height: 65.5rem;
+    background: {
+      image: url('../../images/mobile/image-hero.jpg');
+      repeat: no-repeat;
+      size: cover;
+      position: center;
+    }
+  }
+
   &__intro {
+    padding: 9rem 0 3rem 0;
+    text-align: center;
+
     &-img {
+      min-height: 22.8rem;
+      background: {
+        image: url('../../images/mobile/image-interactive.jpg');
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+      }
+      margin-bottom: 1rem;
     }
   }
 
   &__creations {
-    &__creation {
+    @extend .loopstudios__container;
+    text-align: center;
+  }
+
+  &__creation {
+    min-height: 12rem;
+    background: {
+      repeat: no-repeat;
+      size: 60%, cover;
+      position: left, center;
+    }
+    text-transform: uppercase;
+    display: flex;
+    align-items: end;
+
+    &--earth {
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-primary--dark, 0.7),
+          rgba($color-primary--dark, 0)
+        ),
+        url('../../images/mobile/image-deep-earth.jpg');
+    }
+
+    &--arcade {
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-primary--dark, 0.7),
+          rgba($color-primary--dark, 0)
+        ),
+        url('../../images/mobile/image-night-arcade.jpg');
+    }
+
+    &--soccer {
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-primary--dark, 0.7),
+          rgba($color-primary--dark, 0)
+        ),
+        url('../../images/mobile/image-soccer-team.jpg');
+    }
+
+    &--gird {
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-primary--dark, 0.7),
+          rgba($color-primary--dark, 0)
+        ),
+        url('../../images/mobile/image-grid.jpg');
+    }
+
+    &--above {
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-primary--dark, 0.7),
+          rgba($color-primary--dark, 0)
+        ),
+        url('../../images/mobile/image-from-above.jpg');
+    }
+
+    &--pocket {
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-primary--dark, 0.7),
+          rgba($color-primary--dark, 0)
+        ),
+        url('../../images/mobile/image-pocket-borealis.jpg');
+    }
+
+    &--curiosity {
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-primary--dark, 0.7),
+          rgba($color-primary--dark, 0)
+        ),
+        url('../../images/mobile/image-curiosity.jpg');
+    }
+
+    &--fisheye {
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-primary--dark, 0.7),
+          rgba($color-primary--dark, 0)
+        ),
+        url('../../images/mobile/image-fisheye.jpg');
     }
   }
 }

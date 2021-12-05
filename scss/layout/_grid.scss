@@ -1,0 +1,16 @@
+@use '../abstracts/index.scss' as *;
+
+.loopstudios {
+  &__creations {
+    display: grid;
+    grid-template-rows: 7.3rem repeat(8, 1fr) 5rem;
+    align-items: center;
+    gap: 2.2rem;
+  }
+
+  &__footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+}
