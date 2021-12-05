@@ -3,6 +3,23 @@
 .loopstudios {
   &__header {
     padding-top: 4rem;
+
+    &--mobile {
+      background-color: #000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 4rem 2.5rem;
+      min-height: 100vh;
+      visibility: hidden;
+      opacity: 0;
+
+      &.is-visible {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
   }
 
   &__logo {

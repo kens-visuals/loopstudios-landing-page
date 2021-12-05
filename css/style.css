@@ -76,7 +76,6 @@ body {
 .loopstudios__text {
   max-width: 50rem;
   color: #8c8c8c;
-  font-size: 1.5rem;
   font-family: "Alata", sans-serif;
   font-weight: 300;
   line-height: 2.5rem;
@@ -84,27 +83,54 @@ body {
 }
 
 .loopstudios__nav--primary {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 18rem;
 }
 .loopstudios__list {
   list-style: none;
 }
+.loopstudios__list--primary {
+  display: none;
+}
 .loopstudios__list--secondary {
-  margin: 4rem 0;
+  margin: 2rem 0;
+}
+.loopstudios__item--primary:not(:last-child) {
+  margin-bottom: 2.5rem;
 }
 .loopstudios__item--secondary:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
-.loopstudios__link--secondary:link, .loopstudios__link--secondary:visited {
+.loopstudios__link:link, .loopstudios__link:visited {
   color: white;
   font-size: 1.4rem;
   font-family: "Alata", sans-serif;
   font-weight: 300;
   text-decoration: none;
 }
-
+.loopstudios__link--primary:link, .loopstudios__link--primary:visited {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
 .loopstudios__header {
   padding-top: 4rem;
+}
+.loopstudios__header--mobile {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 2.5rem;
+  min-height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+}
+.loopstudios__header--mobile.is-visible {
+  visibility: visible;
+  opacity: 1;
 }
 .loopstudios__logo {
   width: 14rem;
@@ -213,9 +239,6 @@ body {
 .loopstudios__footer > *:not(:last-child) {
   margin-bottom: 2rem;
 }
-.loopstudios__footer > :not(:nth-child(3)) {
-  margin: 0;
-}
 .loopstudios__copyrights {
   color: dimgray;
 }
@@ -237,6 +260,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+}
+.loopstudios__item--icon {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
