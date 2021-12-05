@@ -12,9 +12,13 @@
       margin-bottom: 2rem;
     }
 
-    // & > :not(:nth-child(3)) {
-    //   margin: 0;
-    // }
+    @media (min-width: 810px) {
+      padding: 5rem 8rem;
+
+      & > *:not(:last-child) {
+        margin: 0;
+      }
+    }
   }
 
   &__copyrights {
@@ -44,6 +48,11 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+
+    @media (min-width: 810px) {
+      align-items: baseline;
+      justify-content: end;
+    }
   }
 
   &__item--icon {

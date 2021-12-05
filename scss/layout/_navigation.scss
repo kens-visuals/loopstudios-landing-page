@@ -5,10 +5,19 @@
     &--primary {
       visibility: hidden;
       opacity: 0;
-      margin-top: 18rem;
+
+      &.is-visible {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 18rem;
+      }
     }
 
     &--secondary {
+      @media (min-width: 810px) {
+        grid-column: 1 / 2;
+        grid-row: 2 / -1;
+      }
     }
   }
 
@@ -21,6 +30,13 @@
 
     &--secondary {
       margin: 2rem 0;
+
+      @media (min-width: 810px) {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
     }
   }
 
@@ -34,6 +50,12 @@
     &--secondary {
       &:not(:last-child) {
         margin-bottom: 2.5rem;
+      }
+
+      @media (min-width: 810px) {
+        &:not(:last-child) {
+          margin: 0;
+        }
       }
     }
   }

@@ -10,6 +10,15 @@
       size: cover;
       position: center;
     }
+
+    @media (min-width: 810px) {
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-primary--dark, 0.4),
+          rgba($color-primary--dark, 0.4)
+        ),
+        url('../../images/desktop/image-hero.jpg');
+    }
   }
 
   &__intro {
@@ -22,9 +31,14 @@
         image: url('../../images/mobile/image-interactive.jpg');
         repeat: no-repeat;
         size: cover;
-        position: center;
+        position: top;
       }
       margin-bottom: 1rem;
+
+      @media (min-width: 810px) {
+        min-height: 44.8rem;
+        background-image: url('../../images/desktop/image-interactive.jpg');
+      }
     }
   }
 

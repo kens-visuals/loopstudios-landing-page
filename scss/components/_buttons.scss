@@ -12,6 +12,13 @@
   letter-spacing: 0.5rem;
   padding: 1rem;
   justify-self: center;
+  margin-top: 3rem;
+
+  @media (min-width: 810px) {
+    width: 20rem;
+    font-size: 2rem;
+    grid-column: 1 / -1;
+  }
 
   &--hamburger {
     all: unset;

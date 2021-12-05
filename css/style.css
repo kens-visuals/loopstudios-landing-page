@@ -50,6 +50,7 @@ body {
   text-transform: uppercase;
 }
 .loopstudios__heading--primary {
+  max-width: 65rem;
   font-size: 3.9rem;
   font-weight: lighter;
   line-height: 1;
@@ -57,11 +58,23 @@ body {
   margin-top: 16rem;
   padding: 2.2rem 2.5rem 1.5rem 2.5rem;
 }
+@media (min-width: 810px) {
+  .loopstudios__heading--primary {
+    font-size: 7rem;
+    margin-top: 14rem;
+    padding: 4rem 4rem 2rem 4rem;
+  }
+}
 .loopstudios__heading--secondary {
   color: black;
   font-size: 3.2rem;
   line-height: 3rem;
   font-weight: lighter;
+}
+@media (min-width: 810px) {
+  .loopstudios__heading--secondary {
+    grid-column: 1/-1;
+  }
 }
 .loopstudios__heading--tertiary {
   width: 40%;
@@ -70,8 +83,15 @@ body {
   margin: 0 0 2rem 2rem;
 }
 .loopstudios__desc {
+  background-color: white;
   color: black;
   padding: 4rem 0;
+}
+@media (min-width: 810px) {
+  .loopstudios__desc {
+    margin: -13rem 0 0 10rem;
+    padding: 6rem 5rem;
+  }
 }
 .loopstudios__text {
   max-width: 50rem;
@@ -85,7 +105,17 @@ body {
 .loopstudios__nav--primary {
   visibility: hidden;
   opacity: 0;
+}
+.loopstudios__nav--primary.is-visible {
+  visibility: visible;
+  opacity: 1;
   margin-top: 18rem;
+}
+@media (min-width: 810px) {
+  .loopstudios__nav--secondary {
+    grid-column: 1/2;
+    grid-row: 2/-1;
+  }
 }
 .loopstudios__list {
   list-style: none;
@@ -96,11 +126,24 @@ body {
 .loopstudios__list--secondary {
   margin: 2rem 0;
 }
+@media (min-width: 810px) {
+  .loopstudios__list--secondary {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
 .loopstudios__item--primary:not(:last-child) {
   margin-bottom: 2.5rem;
 }
 .loopstudios__item--secondary:not(:last-child) {
   margin-bottom: 2.5rem;
+}
+@media (min-width: 810px) {
+  .loopstudios__item--secondary:not(:last-child) {
+    margin: 0;
+  }
 }
 .loopstudios__link:link, .loopstudios__link:visited {
   color: white;
@@ -147,6 +190,14 @@ body {
   letter-spacing: 0.5rem;
   padding: 1rem;
   justify-self: center;
+  margin-top: 3rem;
+}
+@media (min-width: 810px) {
+  .loopstudios__btn {
+    width: 20rem;
+    font-size: 2rem;
+    grid-column: 1/-1;
+  }
 }
 .loopstudios__btn--hamburger {
   all: unset;
@@ -156,10 +207,20 @@ body {
 .loopstudios__container, .loopstudios__creations {
   padding: 0 2.5rem;
 }
+@media (min-width: 810px) {
+  .loopstudios__container, .loopstudios__creations {
+    padding: 0 8rem;
+  }
+}
 .loopstudios__wrapper-logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (min-width: 810px) {
+  .loopstudios__wrapper-copyright {
+    text-align: right;
+  }
 }
 
 .loopstudios__hero {
@@ -168,6 +229,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 810px) {
+  .loopstudios__hero {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/desktop/image-hero.jpg");
+  }
 }
 .loopstudios__intro {
   padding: 9rem 0 3rem 0;
@@ -178,8 +244,14 @@ body {
   background-image: url("../../images/mobile/image-interactive.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   margin-bottom: 1rem;
+}
+@media (min-width: 810px) {
+  .loopstudios__intro-img {
+    min-height: 44.8rem;
+    background-image: url("../../images/desktop/image-interactive.jpg");
+  }
 }
 .loopstudios__creations {
   text-align: center;
@@ -224,10 +296,24 @@ body {
   align-items: center;
   gap: 2.2rem;
 }
+@media (min-width: 810px) {
+  .loopstudios__creations {
+    grid-template-rows: 7.3rem repeat(4, 1fr) 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .loopstudios__footer {
   display: grid;
   align-items: center;
   justify-items: center;
+}
+@media (min-width: 810px) {
+  .loopstudios__footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 5rem);
+    align-items: end;
+    justify-items: unset;
+  }
 }
 
 .loopstudios__footer {
@@ -238,6 +324,14 @@ body {
 }
 .loopstudios__footer > *:not(:last-child) {
   margin-bottom: 2rem;
+}
+@media (min-width: 810px) {
+  .loopstudios__footer {
+    padding: 5rem 8rem;
+  }
+  .loopstudios__footer > *:not(:last-child) {
+    margin: 0;
+  }
 }
 .loopstudios__copyrights {
   color: dimgray;
@@ -260,6 +354,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+}
+@media (min-width: 810px) {
+  .loopstudios__list--icon {
+    align-items: baseline;
+    justify-content: end;
+  }
 }
 .loopstudios__item--icon {
   margin: 0;

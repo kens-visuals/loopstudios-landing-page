@@ -6,11 +6,23 @@
     grid-template-rows: 7.3rem repeat(8, 1fr) 5rem;
     align-items: center;
     gap: 2.2rem;
+
+    @media (min-width: 810px) {
+      grid-template-rows: 7.3rem repeat(4, 1fr) 5rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__footer {
     display: grid;
     align-items: center;
     justify-items: center;
+
+    @media (min-width: 810px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 5rem);
+      align-items: end;
+      justify-items: unset;
+    }
   }
 }
