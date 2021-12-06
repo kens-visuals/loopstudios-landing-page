@@ -1,6 +1,6 @@
-# Frontend Mentor - PROJECT NAME solution
+# Frontend Mentor - Loopstudios Landing Page Solution
 
-This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LINK).
+This is a solution to the [Loopstudios Landing Page Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw).
 
 ## Table of contents
 
@@ -11,8 +11,6 @@ This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LI
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -21,8 +19,8 @@ This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LI
 
 Users should be able to:
 
-- OBJECTIVE_1
-- OBJECTIVE_2
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
 ### Screenshot
 
@@ -30,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Live Site URL: [https://kens-visuals.github.io/loopstudios-landing-page/](https://kens-visuals.github.io/loopstudios-landing-page/)
 - Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
 
 ## My process
@@ -41,38 +39,12 @@ Users should be able to:
 - SCSS custom properties
 - CSS Flexbox
 - CSS Grid
+- Vanilla JS
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [TO_BE_UPDATED]() - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [TO_BE_UPDATED]() - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I really enjoyed this one, because it was a mix of a lot of things with some small, but nice challenges along the way. I also liked the modern and clean look of the design. Not cluttered, straight to the point. I've realized that these challenges not only help me to practice HTML/CSS/JS skills, but also train my eye for some good design. Because as a front-end developer, you need to have some basic understanding of UI/UX design. In brief, I achieved all the goals within the project, provided by Frontend Mentor and also the ones that I came up with. On to the next one!!!
 
 ## Author
 
