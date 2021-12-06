@@ -98,6 +98,7 @@ body {
     font-size: 3.3rem;
     margin: 0 0 3rem 4rem;
     position: absolute;
+    bottom: 0;
   }
 }
 .loopstudios__desc {
