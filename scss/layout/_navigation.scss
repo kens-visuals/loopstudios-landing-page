@@ -5,6 +5,7 @@
     &--primary {
       visibility: hidden;
       opacity: 0;
+      transition: all 0.5s;
 
       &.is-visible {
         visibility: visible;
@@ -32,6 +33,10 @@
     &--primary {
       display: none;
 
+      &.is-unset {
+        display: unset;
+      }
+
       @media (min-width: 1140px) {
         display: flex;
         align-items: center;
@@ -56,27 +61,13 @@
   }
 
   &__item {
-    &--primary {
-      &:not(:last-child) {
-        margin-bottom: 2.5rem;
-      }
-
-      @media (min-width: 1140px) {
-        &:not(:last-child) {
-          margin: 0;
-        }
-      }
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
     }
 
-    &--secondary {
+    @media (min-width: 810px) {
       &:not(:last-child) {
-        margin-bottom: 2.5rem;
-      }
-
-      @media (min-width: 810px) {
-        &:not(:last-child) {
-          margin: 0;
-        }
+        margin: 0;
       }
     }
   }
@@ -125,6 +116,13 @@
         text-transform: uppercase;
       }
 
+      @media (min-width: 810px) {
+        &:link,
+        &:visited {
+          font-size: 4.5rem;
+        }
+      }
+
       @media (min-width: 1140px) {
         &:link,
         &:visited {
@@ -133,9 +131,6 @@
           text-transform: unset;
         }
       }
-    }
-
-    &--secondary {
     }
   }
 }

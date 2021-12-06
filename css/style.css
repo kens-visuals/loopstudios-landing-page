@@ -141,6 +141,7 @@ body {
 .loopstudios__nav--primary {
   visibility: hidden;
   opacity: 0;
+  transition: all 0.5s;
 }
 .loopstudios__nav--primary.is-visible {
   visibility: visible;
@@ -165,6 +166,9 @@ body {
 .loopstudios__list--primary {
   display: none;
 }
+.loopstudios__list--primary.is-unset {
+  display: unset;
+}
 @media (min-width: 1140px) {
   .loopstudios__list--primary {
     display: flex;
@@ -188,19 +192,11 @@ body {
     gap: 4rem;
   }
 }
-.loopstudios__item--primary:not(:last-child) {
-  margin-bottom: 2.5rem;
-}
-@media (min-width: 1140px) {
-  .loopstudios__item--primary:not(:last-child) {
-    margin: 0;
-  }
-}
-.loopstudios__item--secondary:not(:last-child) {
+.loopstudios__item:not(:last-child) {
   margin-bottom: 2.5rem;
 }
 @media (min-width: 810px) {
-  .loopstudios__item--secondary:not(:last-child) {
+  .loopstudios__item:not(:last-child) {
     margin: 0;
   }
 }
@@ -237,6 +233,11 @@ body {
   font-size: 2.5rem;
   text-transform: uppercase;
 }
+@media (min-width: 810px) {
+  .loopstudios__link--primary:link, .loopstudios__link--primary:visited {
+    font-size: 4.5rem;
+  }
+}
 @media (min-width: 1140px) {
   .loopstudios__link--primary:link, .loopstudios__link--primary:visited {
     font-family: "Alata", sans-serif;
@@ -244,6 +245,7 @@ body {
     text-transform: unset;
   }
 }
+
 .loopstudios__header {
   padding-top: 4rem;
 }
@@ -256,15 +258,21 @@ body {
   }
 }
 .loopstudios__header--mobile {
+  width: 100%;
+  min-height: 100vh;
   background-color: #000;
+  padding: 4rem 2.5rem;
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 4rem 2.5rem;
-  min-height: 100vh;
-  visibility: hidden;
-  opacity: 0;
+  transition: all 0.5s;
+}
+@media (min-width: 810px) {
+  .loopstudios__header--mobile {
+    padding: 4rem 8.5rem;
+  }
 }
 .loopstudios__header--mobile.is-visible {
   visibility: visible;
@@ -272,6 +280,11 @@ body {
 }
 .loopstudios__logo {
   width: 14rem;
+}
+@media (min-width: 810px) {
+  .loopstudios__logo {
+    width: 20rem;
+  }
 }
 @media (min-width: 1140px) {
   .loopstudios__logo {
