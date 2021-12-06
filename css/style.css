@@ -398,11 +398,11 @@ body {
 .loopstudios__creation {
   min-height: 12rem;
   background-repeat: no-repeat;
-  background-size: 60%, cover;
+  background-size: cover;
   background-position: left, center;
   text-transform: uppercase;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   position: relative;
   transition: all 0.3s;
 }
