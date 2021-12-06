@@ -26,7 +26,7 @@
     text-align: center;
 
     @media (min-width: 1140px) {
-      padding: 16rem 0 18.5rem 0;
+      padding: 16rem 0 18rem 0;
     }
 
     &-img {
@@ -50,6 +50,10 @@
   &__creations {
     @extend .loopstudios__container;
     text-align: center;
+
+    @media (min-width: 1140px) {
+      text-align: left;
+    }
   }
 
   &__creation {
@@ -63,6 +67,15 @@
     display: flex;
     align-items: end;
 
+    @media (min-width: 1140px) {
+      min-height: 45rem;
+      background: {
+        repeat: no-repeat;
+        size: cover, cover;
+        position: bottom, center;
+      }
+    }
+
     &--earth {
       background-image: linear-gradient(
           90deg,
@@ -70,6 +83,16 @@
           rgba($color-primary--dark, 0)
         ),
         url('../../images/mobile/image-deep-earth.jpg');
+
+      @media (min-width: 1140px) {
+        background-image: linear-gradient(
+            to top,
+            rgba($color-primary--dark, 0.7),
+            rgba($color-primary--dark, 0.2),
+            rgba($color-primary--dark, 0)
+          ),
+          url('../../images/desktop/image-deep-earth.jpg');
+      }
     }
 
     &--arcade {
@@ -79,6 +102,16 @@
           rgba($color-primary--dark, 0)
         ),
         url('../../images/mobile/image-night-arcade.jpg');
+
+      @media (min-width: 1140px) {
+        background-image: linear-gradient(
+            to top,
+            rgba($color-primary--dark, 0.7),
+            rgba($color-primary--dark, 0.2),
+            rgba($color-primary--dark, 0)
+          ),
+          url('../../images/desktop/image-night-arcade.jpg');
+      }
     }
 
     &--soccer {
@@ -88,6 +121,16 @@
           rgba($color-primary--dark, 0)
         ),
         url('../../images/mobile/image-soccer-team.jpg');
+
+      @media (min-width: 1140px) {
+        background-image: linear-gradient(
+            to top,
+            rgba($color-primary--dark, 0.7),
+            rgba($color-primary--dark, 0.2),
+            rgba($color-primary--dark, 0)
+          ),
+          url('../../images/desktop/image-soccer-team.jpg');
+      }
     }
 
     &--gird {
@@ -97,6 +140,16 @@
           rgba($color-primary--dark, 0)
         ),
         url('../../images/mobile/image-grid.jpg');
+
+      @media (min-width: 1140px) {
+        background-image: linear-gradient(
+            to top,
+            rgba($color-primary--dark, 0.7),
+            rgba($color-primary--dark, 0.2),
+            rgba($color-primary--dark, 0)
+          ),
+          url('../../images/desktop/image-grid.jpg');
+      }
     }
 
     &--above {
@@ -106,6 +159,16 @@
           rgba($color-primary--dark, 0)
         ),
         url('../../images/mobile/image-from-above.jpg');
+
+      @media (min-width: 1140px) {
+        background-image: linear-gradient(
+            to top,
+            rgba($color-primary--dark, 0.7),
+            rgba($color-primary--dark, 0.2),
+            rgba($color-primary--dark, 0)
+          ),
+          url('../../images/desktop/image-from-above.jpg');
+      }
     }
 
     &--pocket {
@@ -115,6 +178,16 @@
           rgba($color-primary--dark, 0)
         ),
         url('../../images/mobile/image-pocket-borealis.jpg');
+
+      @media (min-width: 1140px) {
+        background-image: linear-gradient(
+            to top,
+            rgba($color-primary--dark, 0.7),
+            rgba($color-primary--dark, 0.2),
+            rgba($color-primary--dark, 0)
+          ),
+          url('../../images/desktop/image-pocket-borealis.jpg');
+      }
     }
 
     &--curiosity {
@@ -124,6 +197,16 @@
           rgba($color-primary--dark, 0)
         ),
         url('../../images/mobile/image-curiosity.jpg');
+
+      @media (min-width: 1140px) {
+        background-image: linear-gradient(
+            to top,
+            rgba($color-primary--dark, 0.7),
+            rgba($color-primary--dark, 0.2),
+            rgba($color-primary--dark, 0)
+          ),
+          url('../../images/desktop/image-curiosity.jpg');
+      }
     }
 
     &--fisheye {
@@ -133,6 +216,16 @@
           rgba($color-primary--dark, 0)
         ),
         url('../../images/mobile/image-fisheye.jpg');
+
+      @media (min-width: 1140px) {
+        background-image: linear-gradient(
+            to top,
+            rgba($color-primary--dark, 0.7),
+            rgba($color-primary--dark, 0.2),
+            rgba($color-primary--dark, 0)
+          ),
+          url('../../images/desktop/image-fisheye.jpg');
+      }
     }
   }
 }
