@@ -23,9 +23,8 @@
     <title>Frontend Mentor | Loopstudios Landing Page</title>
   </head>
   <body>
-    <section class="loopstudios__hero">
+    <section class="loopstudios__hero" aria-label="hero">
       <div class="loopstudios__container">
-        <!-- loopstudios__header--mobile is-visible -->
         <header class="loopstudios__header js-header">
           <div class="loopstudios__wrapper-logo">
             <img
@@ -34,7 +33,11 @@
               class="loopstudios__logo loopstudios__logo--primary"
             />
 
-            <button class="loopstudios__btn loopstudios__btn--hamburger js-btn">
+            <button
+              class="loopstudios__btn loopstudios__btn--hamburger js-btn"
+              aria-expanded="false"
+              aria-label="hamburger"
+            >
               <img
                 src="./images/icon-hamburger.svg"
                 alt=""
@@ -44,7 +47,10 @@
             </button>
           </div>
 
-          <nav class="loopstudios__nav loopstudios__nav--primary js-nav">
+          <nav
+            class="loopstudios__nav loopstudios__nav--primary js-nav"
+            aria-label="primary nav"
+          >
             <ul class="loopstudios__list loopstudios__list--primary">
               <li class="loopstudios__item">
                 <a
@@ -96,7 +102,7 @@
       </div>
     </section>
 
-    <section class="loopstudios__intro">
+    <div class="loopstudios__intro" aria-label="intro">
       <div class="loopstudios__container loopstudios__wrapper-intro">
         <div class="loopstudios__intro-img"></div>
 
@@ -113,9 +119,9 @@
           </p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="loopstudios__creations">
+    <section class="loopstudios__creations" aria-label="projects">
       <h2 class="loopstudios__heading loopstudios__heading--secondary">
         Our creations
       </h2>
@@ -173,7 +179,10 @@
         class="loopstudios__logo loopstudios__logo--secondary"
       />
 
-      <nav class="loopstudios__nav loopstudios__nav--secondary">
+      <nav
+        class="loopstudios__nav loopstudios__nav--secondary"
+        aria-label="secondary nav"
+      >
         <ul class="loopstudios__list loopstudios__list--secondary">
           <li class="loopstudios__item">
             <a href="#" class="loopstudios__link">About</a>
@@ -195,7 +204,11 @@
 
       <ul class="loopstudios__list loopstudios__list--icon">
         <li class="loopstudios__item loopstudios__item--icon">
-          <a href="#" class="loopstudios__link loopstudios__link--icon">
+          <a
+            href="#"
+            class="loopstudios__link loopstudios__link--icon"
+            aria-label="social media"
+          >
             <img
               src="./images/icon-facebook.svg"
               alt=""
@@ -205,7 +218,11 @@
           </a>
         </li>
         <li class="loopstudios__item loopstudios__item--icon">
-          <a href="#" class="loopstudios__link loopstudios__link--icon">
+          <a
+            href="#"
+            class="loopstudios__link loopstudios__link--icon"
+            aria-label="social media"
+          >
             <img
               src="./images/icon-twitter.svg"
               alt=""
@@ -215,7 +232,11 @@
           </a>
         </li>
         <li class="loopstudios__item loopstudios__item--icon">
-          <a href="#" class="loopstudios__link loopstudios__link--icon">
+          <a
+            href="#"
+            class="loopstudios__link loopstudios__link--icon"
+            aria-label="social media"
+          >
             <img
               src="./images/icon-pinterest.svg"
               alt=""
@@ -225,7 +246,11 @@
           </a>
         </li>
         <li class="loopstudios__item loopstudios__item--icon">
-          <a href="#" class="loopstudios__link loopstudios__link--icon">
+          <a
+            href="#"
+            class="loopstudios__link loopstudios__link--icon"
+            aria-label="social media"
+          >
             <img
               src="./images/icon-instagram.svg"
               alt=""
