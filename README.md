@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [https://kens-visuals.github.io/loopstudios-landing-page/](https://kens-visuals.github.io/loopstudios-landing-page/)
-- Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Solution URL: [https://www.frontendmentor.io/solutions/loopstudios-landing-page-with-vanilla-js-scss-and-bem-RUVC6Bett](https://www.frontendmentor.io/solutions/loopstudios-landing-page-with-vanilla-js-scss-and-bem-RUVC6Bett)
 
 ## My process
 
