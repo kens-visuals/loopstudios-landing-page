@@ -7,6 +7,10 @@
     @media (min-width: 810px) {
       padding: 0 8rem;
     }
+
+    @media (min-width: 1140px) {
+      padding: 0 16rem;
+    }
   }
 
   &__wrapper {
@@ -14,6 +18,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+
+    &-intro {
+      @media (min-width: 1140px) {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 50rem;
+      }
     }
 
     &-copyright {

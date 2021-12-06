@@ -9,6 +9,7 @@
       font-size: 3.9rem;
       font-weight: lighter;
       line-height: 1;
+      letter-spacing: 0.1rem;
       border: 0.2rem solid $color-primary;
       margin-top: 16rem;
       padding: 2.2rem 2.5rem 1.5rem 2.5rem;
@@ -16,7 +17,7 @@
       @media (min-width: 810px) {
         font-size: 7rem;
         margin-top: 14rem;
-        padding: 4rem 4rem 2rem 4rem;
+        padding: 4rem 4rem 3rem 4rem;
       }
     }
 
@@ -28,6 +29,11 @@
 
       @media (min-width: 810px) {
         grid-column: 1 / -1;
+      }
+
+      @media (min-width: 1140px) {
+        font-size: 4.7rem;
+        line-height: 5rem;
       }
     }
 
@@ -48,6 +54,15 @@
       margin: -13rem 0 0 10rem;
       padding: 6rem 5rem;
     }
+
+    @media (min-width: 1140px) {
+      text-align: left;
+      margin: 18rem 0 0 -16rem;
+      padding: 0 0 0 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
   }
 
   &__text {
@@ -57,5 +72,10 @@
     font-weight: 300;
     line-height: 2.5rem;
     margin: 1.5rem auto;
+
+    @media (min-width: 1140px) {
+      font-size: 1.49rem;
+      margin: 2rem 0 0 0;
+    }
   }
 }

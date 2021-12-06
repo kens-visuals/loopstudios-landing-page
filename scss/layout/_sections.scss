@@ -25,6 +25,10 @@
     padding: 9rem 0 3rem 0;
     text-align: center;
 
+    @media (min-width: 1140px) {
+      padding: 16rem 0 18.5rem 0;
+    }
+
     &-img {
       min-height: 22.8rem;
       background: {
@@ -38,6 +42,7 @@
       @media (min-width: 810px) {
         min-height: 44.8rem;
         background-image: url('../../images/desktop/image-interactive.jpg');
+        margin: 0;
       }
     }
   }

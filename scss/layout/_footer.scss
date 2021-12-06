@@ -60,6 +60,9 @@
   }
 
   &__link--icon {
+    &::after {
+      width: 100%;
+    }
   }
 
   &__icon {

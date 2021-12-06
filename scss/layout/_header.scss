@@ -4,6 +4,13 @@
   &__header {
     padding-top: 4rem;
 
+    @media (min-width: 1140px) {
+      padding-top: 6rem;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+    }
+
     &--mobile {
       background-color: #000;
       position: fixed;
@@ -24,8 +31,15 @@
 
   &__logo {
     width: 14rem;
+
+    @media (min-width: 1140px) {
+      width: 19rem;
+    }
   }
 
   &__icon-hamburger {
+    @media (min-width: 1140px) {
+      display: none;
+    }
   }
 }
