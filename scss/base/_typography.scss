@@ -50,6 +50,7 @@
         width: 70%;
         font-size: 3.3rem;
         margin: 0 0 3rem 4rem;
+        position: absolute;
       }
     }
   }
@@ -66,11 +67,12 @@
 
     @media (min-width: 1140px) {
       text-align: left;
-      margin: 18rem 0 0 -16rem;
-      padding: 0 0 0 10rem;
+      margin: 0 0 0 -16rem;
+      padding: 10rem 0 0 10rem;
       display: flex;
       flex-direction: column;
       justify-content: end;
+      align-self: end;
     }
   }
 
